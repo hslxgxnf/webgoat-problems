@@ -1,0 +1,3 @@
+Enter your credit card number:
+
+<script>alert("XSS")</script>
