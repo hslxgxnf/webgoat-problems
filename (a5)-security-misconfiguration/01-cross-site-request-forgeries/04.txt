@@ -1,0 +1,2 @@
+Intercept the form submission request from the original host.
+Remove the Referer header from the request.
