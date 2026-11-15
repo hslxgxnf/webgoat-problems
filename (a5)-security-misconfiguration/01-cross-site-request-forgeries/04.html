@@ -6,22 +6,16 @@
   </head>
   <body>
     <form
-      class="attack-form"
-      accept-charset="UNKNOWN"
-      id="csrf-review"
-      method="POST"
-      name="review-form"
-      successcallback=""
+      method="post"
       action="http://localhost:8080/WebGoat/csrf/review"
+      target="_blank"
     >
-      <input
-        class="form-control"
-        id="reviewText"
-        name="reviewText"
-        placeholder="Add a Review"
-        type="text"
-      />
-      <input class="form-control" id="reviewStars" name="stars" type="text" />
+      <label>
+        <input type="text" name="reviewText" placeholder="Add a Review" />
+      </label>
+      <label>
+        <input type="text" name="stars" />
+      </label>
       <input
         type="hidden"
         name="validateReq"
